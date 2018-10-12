@@ -1,0 +1,14 @@
+[Unit]
+Description=Prometheus Alert Manager
+After=network.target
+
+[Service]
+Type=simple
+EnvironmentFile=-/etc/sysconfig/alertmanager
+ExecStart=/usr/bin/alertmanager $ARGS $STORAGE_PATH $DEBUG
+User=alertmanager
+ExecReload=/bin/kill -HUP $MAINPID
+Restart=on-abnormal
+
+[Install]
+WantedBy=multi-user.target

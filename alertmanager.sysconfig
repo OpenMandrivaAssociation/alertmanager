@@ -1,0 +1,3 @@
+ARGS="--config.file=/etc/alertmanager/alertmanager.yaml"
+STORAGE_PATH="--storage.path=/var/lib/alertmanager/data"
+#DEBUG="--log.level=debug"
