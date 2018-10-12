@@ -1,5 +1,3 @@
-#% define debug_package %{nil}
-
 Name:		alertmanager
 Version:	0.15.2
 Release:        1
