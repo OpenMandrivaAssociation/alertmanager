@@ -9,8 +9,8 @@ Source0:	https://github.com/prometheus/alertmanager/archive/v%{version}.tar.gz
 Source1:	alertmanager.service
 Source2:	alertmanager.sysconfig
 BuildRequires:	promu
+BuildRequires:	golang
 Requires:	prometheus
-Requires(pre):  /usr/sbin/useradd
 Requires(post): systemd
 Requires(preun): systemd
 Requires(postun): systemd
