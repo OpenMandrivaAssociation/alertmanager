@@ -1,6 +1,6 @@
 Name:		alertmanager
-Version:	0.15.2
-Release:        2
+Version:	0.21.0
+Release:        1
 Summary:	The Alertmanager handles alerts sent by client applications such as the Prometheus server.
 Group:		System Environment/Daemons
 License:	See the LICENSE file at github.
@@ -22,7 +22,7 @@ It takes care of deduplicating, grouping, and routing them to the correct receiv
 It also takes care of silencing and inhibition of alerts.
 
 %prep
-%setup -q
+%autosetup -p1
 mkdir -p src/github.com/prometheus/
 ln -s ../../../ src/github.com/prometheus/alertmanager
 
