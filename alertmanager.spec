@@ -1,6 +1,6 @@
 Name:		alertmanager
 Version:	0.21.0
-Release:        2
+Release:        3
 Summary:	The Alertmanager handles alerts sent by client applications such as the Prometheus server.
 Group:		System Environment/Daemons
 License:	See the LICENSE file at github.
